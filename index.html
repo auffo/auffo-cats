@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+    <title>navbar from CSS grouping elements</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: helvetica, verdana, sans-serif;
+            font-size: 0.80em;
+            color: rgb(61, 60, 59);
+        }
+        img {
+            float: left;
+            margin: 4px 20px 5px 0;
+        }
+        p {
+            padding: 0 10px 0 5px;
+            line-height: 1.6em;
+        }
+        h1, h2 {
+            margin: 10px;
+            color: rgb(69, 68, 64);
+        }
+        ul {
+            list-style: square;
+        }
+        .site-header {
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+            padding: 0;
+            background-color: rgb(217, 214, 195);
+        }
+        .lovey-dovey {
+            font-family: cursive;
+            font-size: 1.2em;
+            color: rgb(230, 191, 18);
+        }
+        .whylove {
+            font-family: cursive;
+            font-size: 1.2em;
+        }
+        .source {
+            font-size: 0.85em;
+            font-style: italic;
+        }
+        #first-para {
+            margin-top: 100px;
+        }
+/* Original source for navbar: cssnewbie.com. See html for url. */
+/* (I modified the original CSS so it's quite different.) */
+        #navbar {
+            width: 100%;
+            float: left;
+            margin: auto;
+            padding: 0;
+            list-style: none;
+            background-color: rgb(240, 236, 214);
+        }
+        #navbar li {
+            float: left;
+        }
+        #navbar li a {
+            display: block;
+            padding: 16px 37px 15px 14px;
+            text-decoration: none;
+            font-size: 1.2em;
+            color: #194;
+        }
+        #navbar li a:hover {
+            color: rgb(159, 166, 154);
+        }
+        #official-info {
+            background-color: rgb(250, 248, 235);
+            margin-top: -10px;
+        }
+        #lovelist {
+            margin: auto;
+            width: 75%;
+            margin-top: 30px;
+            margin-bottom: 25px;
+            padding-left: 20px;
+            padding-bottom: 2px;
+            background-color: rgb(242, 241, 234);
+        }
+        #lovelist li {
+            font-size: 1.2em;
+            margin-top: -2px;
+            margin-bottom: 1px;
+            padding: 4px;
+        }
+        #footnote {
+            background-color: rgb(242, 200, 14);
+            margin-top: 30px;
+            padding: 1px 0 1px 10px;
+        }
+        #disclaimer {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="site-header">
+    <h1>All About Cats</h1>
+        <ul id="navbar">
+            <li><a href="https://www.purina.com/cats/cat-breeds/cat-breed-selector">Breeds</a></li>
+            <li><a href="http://www.humanesociety.org/animals/cats/tips/cat_communication.html">Behavior</a></li>
+            <li><a href="https://www.aspca.org/pet-care/cat-care/general-cat-care">Care</a></li>
+            <li><a href="http://hglick.hubpages.com/hub/Cat-Symptoms">Quirks</a></li>
+        </ul>
+      </div>  
+    <div id="official-info">
+    <h2>Official Info on Cats</h2>
+    <p id="first-para"><img src="https://www.kasandbox.org/programming-images/animals/cat.png" width="204"> The cat (Felis catus), also known as the domestic cat or housecat to distinguish it from other felines and felids, is a small domesticated carnivorous mammal that is valued by humans for its companionship and ability to hunt vermin and household pests. Cats have been associated with humans for at least 9,500 years, and are currently the most popular pet in the world. Owing to their close association with humans, cats are now found almost everywhere on Earth.</p>
+    <p>Cats are similar in anatomy to the other felids, with strong, flexible bodies, quick reflexes, sharp retractable claws, and teeth adapted to killing small prey. As nocturnal predators, cats use their acute hearing and ability to see in near darkness to locate prey. Not only can cats hear sounds too faint for human ears, they can also hear sounds higher in frequency than humans can perceive. This is because cats' usual prey (particularly rodents such as mice) make high frequency noises, so cats' hearing has evolved to pinpoint these faint high-pitched sounds. Cats rely more on smell than taste, and have a vastly better sense of smell than humans.</p>
+    <p>Despite being solitary hunters, cats are a social species and use a variety of vocalizations, pheromones and types of body language for communication. These include meowing, purring, trilling, hissing, growling, and grunting.</p>
+    <p>Cats have a rapid breeding rate. Under controlled breeding, they can be bred and shown as registered pedigree pets, a hobby known as cat fancy. Failure to control the breeding of pet cats by spaying and neutering and the abandonment of former household pets has resulted in problems caused by large numbers of feral cats worldwide, with a population of up to 60 million of these animals in the United States alone.</p>
+    <p>Read more on <a href="http://en.wikipedia.org/wiki/Cat">Wikipedia</a>.</p>
+</div>   
+<div id="lovelist">
+         <h2>Why I <span class="lovey-dovey">Love</span> Cats</h2>
+    <ul>
+        <li><span class="whylove">Furry:</span> Can't beat the little fuzzballs!</li>
+        <li><span class="whylove">Cute:</span> Because they're furry!</li>
+        <li><span class="whylove">Evil:</span> I think they're possessed by goblin spirits!</li>
+    </ul>
+</div>    
+    <div id="footnote">
+    <p><span id="disclaimer">Disclaimer:</span> I'm allergic to cats! I actually have a dog. I still love all animals, though.</p>
+    </div>
+    <p class="source">**Nav bar CSS source: <a href="http://www.cssnewbie.com/example/horizontal-menu/">CSSnewbie.com</a></p>
+
+</body>
+</html>
